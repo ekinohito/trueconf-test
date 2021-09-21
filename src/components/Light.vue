@@ -20,6 +20,7 @@ export default {
     border-radius: 50%;
     box-shadow: inset 0 0 60px black;
     opacity: 50%;
+    z-index: 100;
   }
 
   .light.on {

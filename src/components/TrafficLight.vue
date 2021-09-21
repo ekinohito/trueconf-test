@@ -22,12 +22,14 @@ export default {
 
 <style scoped>
   .traffic-light {
+    position: relative;
     display: inline-flex;
     flex-direction: column;
     background-color: #2c3e50;
     border-radius: 25px;
     padding: 20px;
     box-shadow: 0 0 10px black;
+    z-index: 90;
   }
 
   .traffic-light>* {
