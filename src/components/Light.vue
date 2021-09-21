@@ -1,5 +1,5 @@
 <template>
-  <div class="light" :class="{on: isOn, blink: isBlinking}" :style="{backgroundColor: this.color}"/>
+  <div class="light" :class="{on: isOn, blink: isBlinking}" :style="{'--color': color}"/>
 </template>
 
 <script>
@@ -20,7 +20,11 @@ export default {
     border-radius: 50%;
     box-shadow: inset 0 0 60px black;
     opacity: 50%;
-    z-index: 100;
+  }
+
+  /*noinspection CssUnresolvedCustomProperty*/
+  .light {
+    background-color: var(--color);
   }
 
   .light.on {

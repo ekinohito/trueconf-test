@@ -29,7 +29,6 @@ export default {
     border-radius: 25px;
     padding: 20px;
     box-shadow: 0 0 10px black;
-    z-index: 90;
   }
 
   .traffic-light>* {
