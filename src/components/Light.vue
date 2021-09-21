@@ -14,6 +14,7 @@ export default {
 </script>
 
 <style scoped>
+/*
   .light {
     width: 100px;
     height: 100px;
@@ -21,25 +22,26 @@ export default {
     box-shadow: inset 0 0 60px black;
     opacity: 50% !important;
   }
+  */
 
   /*noinspection CssUnresolvedCustomProperty*/
   .light {
     background-color: var(--color);
   }
 
-  .light.on {
-    box-shadow: inset 0 0 10px black;
-    opacity: 100% !important;
-  }
-/*
-  .light.on.blink {
-    animation: blink 0.5s;
-    animation-iteration-count: infinite;
-  }
+  /*
+    .light.on {
+      box-shadow: inset 0 0 10px black;
+      opacity: 100% !importan    }
+  /*
+    .light.on.blink {
+      animation: blink 0.5s;
+      animation-iteration-count: infinite;
+    }
 
-  @keyframes blink {
-    0% { box-shadow: inset 0 0 10px black; opacity: 100%; }
-    50% { box-shadow: inset 0 0 60px black; opacity: 50%; }
-    100% { box-shadow: inset 0 0 10px black; opacity: 100%; }
-  }*/
+    @keyframes blink {
+      0% { box-shadow: inset 0 0 10px black; opacity: 100%; }
+      50% { box-shadow: inset 0 0 60px black; opacity: 50%; }
+      100% { box-shadow: inset 0 0 10px black; opacity: 100%; }
+    }*/
 </style>
