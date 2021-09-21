@@ -31,7 +31,7 @@ export default {
     box-shadow: inset 0 0 10px black;
     opacity: 100% !important;
   }
-
+/*
   .light.on.blink {
     animation: blink 0.5s;
     animation-iteration-count: infinite;
@@ -41,5 +41,5 @@ export default {
     0% { box-shadow: inset 0 0 10px black; opacity: 100%; }
     50% { box-shadow: inset 0 0 60px black; opacity: 50%; }
     100% { box-shadow: inset 0 0 10px black; opacity: 100%; }
-  }
+  }*/
 </style>
