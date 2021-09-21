@@ -19,7 +19,7 @@ export default {
     height: 100px;
     border-radius: 50%;
     box-shadow: inset 0 0 60px black;
-    opacity: 50%;
+    opacity: 50% !important;
   }
 
   /*noinspection CssUnresolvedCustomProperty*/
@@ -29,7 +29,7 @@ export default {
 
   .light.on {
     box-shadow: inset 0 0 10px black;
-    opacity: 100%;
+    opacity: 100% !important;
   }
 
   .light.on.blink {
