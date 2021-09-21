@@ -1,5 +1,5 @@
 <template>
-  <div class="light" :class="{on: isOn}" :style="{backgroundColor: this.color}"/>
+  <div class="light" :class="{on: isOn, blink: isBlinking}" :style="{backgroundColor: this.color}"/>
 </template>
 
 <script>
@@ -7,7 +7,8 @@ export default {
   name: "Light",
   props: {
     color: { type: String, default: "#AAAAAA" },
-    isOn: { type: Boolean, default: false }
+    isOn: { type: Boolean, default: false },
+    isBlinking: { type: Boolean, default: false },
   }
 }
 </script>
@@ -24,5 +25,16 @@ export default {
   .light.on {
     box-shadow: inset 0 0 10px black;
     opacity: 100%;
+  }
+
+  .light.on.blink {
+    animation: blink 0.5s;
+    animation-iteration-count: infinite;
+  }
+
+  @keyframes blink {
+    0% { box-shadow: inset 0 0 10px black; opacity: 100%; }
+    50% { box-shadow: inset 0 0 60px black; opacity: 50%; }
+    100% { box-shadow: inset 0 0 10px black; opacity: 100%; }
   }
 </style>
