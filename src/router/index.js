@@ -1,6 +1,8 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
-import TrafficLight from "@/components/TrafficLight";
+import Red from "@/views/Red";
+import Yellow from "@/views/Yellow";
+import Green from "@/views/Green";
 
 Vue.use(VueRouter)
 
@@ -8,20 +10,17 @@ const routes = [
     {
         path: '/red',
         name: 'Red',
-        component: TrafficLight,
-        props: {isRedOn: true}
+        component: Red,
     },
     {
         path: '/yellow',
         name: 'Yellow',
-        component: TrafficLight,
-        props: {isYellowOn: true}
+        component: Yellow
     },
     {
         path: '/green',
         name: 'Green',
-        component: TrafficLight,
-        props: {isGreenOn: true}
+        component: Green
     },
 ]
 
